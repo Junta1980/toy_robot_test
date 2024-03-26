@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "all": "mocha  --timeout 200000 --recursive --colors ./src/* 2>&1 > reportAll.txt",
+    "all": "mocha  --timeout 200000 --recursive ./src/* > reportAll.txt",
     "place": "mocha  --timeout 200000 --recursive  ./src/test1.palce.input.js > report-place.log",
     "moveRotate": "mocha  --timeout 200000 --recursive  ./src/test2.rotate-move.js > report-moverotate.log",
     "wrongInput": "mocha  --timeout 200000 --recursive  ./src/test3.input-wrong.js > report-inputwrong.log"
@@ -14,7 +14,6 @@
   "license": "ISC",
   "dependencies": {
     "mocha": "^10.3.0",
-    "selenium-webdriver": "^4.18.1",
-    "tee-1": "^0.2.0"
+    "selenium-webdriver": "^4.18.1"
   }
 }
