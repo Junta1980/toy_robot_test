@@ -1,0 +1,4 @@
+node_modules/*
+report-inputwrong.log
+report-moverotate.log
+report-place.log
