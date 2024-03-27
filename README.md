@@ -1,4 +1,4 @@
-# Selenium
+# toy robot unit test
 
 This is a project that utilizes Selenium WebDriver to perform automated testing on a web application.
 
@@ -15,3 +15,5 @@ npm run all: Runs all tests.
 npm run place: Runs tests related to robot positioning.
 npm run moveRotate: Runs tests related to robot movement and rotation.
 npm run wrongInput: Runs tests related to incorrect inputs.
+
+Before running the scripts, check the config.json present in the config directory and check or set the correct URL
