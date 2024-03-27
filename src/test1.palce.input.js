@@ -22,9 +22,11 @@ describe('Test Place', function () {
 
     it('PLACE input', async function() {
         await driver.get(config.url);
-        await driver.findElement(By.xpath('//input')).sendKeys('1,4,N');
-        await driver.findElement(By.xpath('//button[text()="PLACE"]')).click();  
-        await driver.findElement(By.xpath('//div[@class="rotate-0"]'));
+        await driver.findElement(By.xpath('//input')).sendKeys('1,4,S');
+        await new Promise(r => setTimeout(r, 3000));
+        await driver.findElement(By.xpath('//button[text()="PLACE"]')).click(); 
+        await new Promise(r => setTimeout(r, 3000)); 
+        await driver.findElement(By.xpath('//div[@class="rotate-2"]'));
         await new Promise(r => setTimeout(r, 5000));    
     });
 

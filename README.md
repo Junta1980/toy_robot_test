@@ -15,5 +15,13 @@ The project is configured to run several test scripts using Mocha and selenium-w
 2. npm run place: Runs tests related to robot positioning.
 3. npm run moveRotate: Runs tests related to robot movement and rotation.
 4. npm run wrongInput: Runs tests related to incorrect inputs.
+5. npm run report: Runs tests related to report.
+
+The scripts generate verification file:
+1. all: reportAll.log
+2. place: report-place.log
+3. moveRotate: report-moverotate.log
+4. wrongInput: report-inputwrong.log
+5. report: report-report.log
 
 Before running the scripts, check the config.json present in the config directory and check or set the correct URL

@@ -5,10 +5,11 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "all": "mocha  --timeout 200000 --recursive ./src/* > reportAll.txt",
+    "all": "mocha  --timeout 200000 --recursive ./src/* > reportAll.log",
     "place": "mocha  --timeout 200000 --recursive  ./src/test1.palce.input.js > report-place.log",
     "moveRotate": "mocha  --timeout 200000 --recursive  ./src/test2.rotate-move.js > report-moverotate.log",
-    "wrongInput": "mocha  --timeout 200000 --recursive  ./src/test3.input-wrong.js > report-inputwrong.log"
+    "wrongInput": "mocha  --timeout 200000 --recursive  ./src/test3.input-wrong.js > report-inputwrong.log",
+    "report": "mocha  --timeout 200000 --recursive  ./src/test4.report.js > report-report.log"
   },
   "author": "",
   "license": "ISC",
